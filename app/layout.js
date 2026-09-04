@@ -10,7 +10,7 @@ export const metadata = {
  * Główny layout wspólny dla wszystkich tras aplikacji.
  *
  * @param {{ children: React.ReactNode }} props - Zawartość aktualnie otwartej trasy.
- * @returns {JSX.Element} Szkielet dokumentu HTML z ustawionym językiem i stylami globalnymi.
+ * @returns {React.JSX.Element} Szkielet dokumentu HTML z ustawionym językiem i stylami globalnymi.
  */
 export default function RootLayout({ children }) {
   return (
