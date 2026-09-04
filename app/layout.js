@@ -7,10 +7,10 @@ export const metadata = {
 };
 
 /**
- * Root layout for every route in the application.
+ * Główny layout wspólny dla wszystkich tras aplikacji.
  *
- * @param {{ children: React.ReactNode }} props
- * @returns {JSX.Element}
+ * @param {{ children: React.ReactNode }} props - Zawartość aktualnie otwartej trasy.
+ * @returns {JSX.Element} Szkielet dokumentu HTML z ustawionym językiem i stylami globalnymi.
  */
 export default function RootLayout({ children }) {
   return (
