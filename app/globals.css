@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-track: #1b1d23;
+  --color-track-soft: #262932;
+  --color-dust: #e8e2d4;
+  --color-signal: #ffb703;
+  --color-signal-deep: #fb8500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-track);
+  color: var(--color-dust);
+}
