@@ -3,7 +3,7 @@
 export default function GamePage() {
   return (
     <main className="flex min-h-screen items-center justify-center px-6">
-      <p className="text-dust/60">Ekran gry w budowie.</p>
+      <p className="text-muted">Ekran gry w budowie.</p>
     </main>
   );
 }

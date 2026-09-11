@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
     "checkJs": true,
     "target": "ES2022",
@@ -10,6 +11,14 @@
     "moduleResolution": "bundler",
     "jsx": "preserve"
   },
-  "include": ["**/*.js", "**/*.jsx"],
-  "exclude": ["node_modules", ".next"]
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "*.js",
+    "*.mjs"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next"
+  ]
 }

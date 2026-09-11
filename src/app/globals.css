@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #ffffff;
+  --color-ink: #111111;
+  --color-accent: #d0021b;
+  --color-shade: #f4f4f5;
+  --color-rule: #e4e4e7;
+  --color-muted: #6b7280;
+  --color-code-string: #1d4ed8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.tresc:empty {
+  display: grid;
+  place-items: center;
+  min-height: 7rem;
+  border: 2px dashed var(--color-rule);
+  border-radius: 0.5rem;
+}
+
+.tresc:empty::before {
+  content: "Miejsce na tekst";
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+li::marker {
+  color: var(--color-accent);
+}
+
+.tresc h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
+}
+
+.tresc ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.tresc ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
+.tresc a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
